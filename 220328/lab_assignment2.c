@@ -1,6 +1,6 @@
 #include <stdio.h>
-#define hourSec 3600
-#define minSec 60
+#define hourToSec 3600
+#define minToSec 60
 
 int main(void){
     float speed, distance;
@@ -9,10 +9,10 @@ int main(void){
     scanf("%f",&speed);
     printf("Enter the driving distance <km>: ");
     scanf("%f",&distance);
-    timeSec = distance / speed * hourSec;
-    hour = timeSec / hourSec; <-- 예전 코드
-    min = timeSec % hourSec / minSec;  
-    sec = timeSec % minSec;
+    timeSec = distance / speed * hourToSec;
+    hour = timeSec / hourToSec; 
+    min = timeSec % hourToSec / minToSec;  
+    sec = timeSec % minToSec;
     printf("The total driving time is %d hours %d minutes %d seconds \n",hour,min,sec);
     return 0;
 }
