@@ -9,7 +9,7 @@ int main(void){
     } else if ( a >= 'A' & a <= 'Z'){
         printf("%c -> Ascii Code: %d \n", a, a);
     } else {
-        printf("%c -> 알파벳이 아닙니다.", a);
+        printf("%d -> 알파벳이 아닙니다.", a);
     }
     return 0;
 }
