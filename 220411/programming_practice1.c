@@ -5,7 +5,7 @@ char ch;
 scanf("%c", &ch);
 while(ch != 'g')
 {
-printf("%c",ch);
+printf("%c",++ch);
 scanf("%c",&ch);
 }
 return 0;

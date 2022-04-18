@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-int fibo(int n){
-    if(n <=1){
-        return n;
+    int fibo(int n){
+        if(n <=1){
+            return n;
+        }
+        return fibo(n-1) + fibo(n-2);
     }
-    return fibo(n-1) + fibo(n-2);
-}
 
 
 int main(void){
@@ -26,9 +26,9 @@ int main(void){
 
 
 
-    printf("%d", fibo(3));
-    printf("%d", fibo(5));
-    printf("%d", fibo(7));
+    // printf("%d", fibo(3));
+    // printf("%d", fibo(5));
+    // printf("%d", fibo(7));
 
     return 0;
 }
