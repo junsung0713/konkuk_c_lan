@@ -3,10 +3,10 @@
 #define zero 0
 #define limit 10000000000
 int main(void){
-    float nuealbi ;
+    double nuealbi ;
     int garo,sero;
     printf("넓이를 입력하세요: ");
-    scanf("%f", &nuealbi);
+    scanf("%lf", &nuealbi);
     printf("가로 세로 비율을 입력하세요:");
     scanf("%d %d",&garo, &sero);
     if(nuealbi > limit || nuealbi<=zero){
