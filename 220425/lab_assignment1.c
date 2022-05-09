@@ -43,8 +43,8 @@ int main(void){
 
         default:
             printf("잘못 입력하였습니다.\n");
-            break;;
+            break;
         }
-    }while(calculation = getchar() == '\n');
+    }while((calculation = getchar()) == '\n');
     return 0;
 }
