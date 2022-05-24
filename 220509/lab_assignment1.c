@@ -4,16 +4,16 @@
 
 void get_dice_face() {
 static int one, two, three, four, five, six;
-int random = rand() % 6;
+int random = rand() % 6 + 1;
 switch (random) {
-case 0: one++; break;
-case 1: two++; break;
-case 2: three++; break;
-case 3: four++; break;
-case 4: five++; break;
-case 5: six++; break;
+case 1: one++; break;
+case 2: two++; break;
+case 3: three++; break;
+case 4: four++; break;
+case 5: five++; break;
+case 6: six++; break;
 }
-printf("현재 주사위 면: %d\n", random + 1);
+printf("현재 주사위 면: %d\n", random);
 printf("면 별 나온 횟수:\n");
 printf("1: %d, 2: %d, 3: %d, 4: %d, 5: %d, 6: %d\n", one, two, three, four, five, six);
 }
